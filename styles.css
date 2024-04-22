@@ -12,7 +12,6 @@
 }
 
 :root {
-
   --bg-color: #070d14;
   --text-color: #dddef3;
   --main-color: #703136;
@@ -20,8 +19,6 @@
 
 html {
   font-size: 62.5%;
-  /* overflow: hidden; */
-  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -62,7 +59,6 @@ header {
   margin-left: 20px;
   padding: 6px 15px;
   transition: 0.5s;
-
 }
 
 .nav-bar a:hover,
@@ -108,31 +104,29 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url('') no-repeat;
+  background: url("") no-repeat;
   background-size: cover;
   background-position: center;
-
 }
 
-.antika{
+.antika {
   width: 300px;
   height: 400px;
   border-radius: 1rem;
   box-shadow: 5px 10px white;
-  
 }
 
-.antika:hover{
+.antika:hover {
   box-shadow: none;
   opacity: 0.5;
 }
 
 .container {
   max-width: 60rem;
- display: flex;
+  display: flex;
   justify-items: center;
   text-align: center;
-  margin: 0  ;
+  margin: 0;
   gap: 50rem;
 }
 
@@ -142,16 +136,15 @@ section {
   line-height: 1.1;
 }
 
-.text-container .text-animate {
+.text-container .text-profile {
   position: relative;
   width: 32.8rem;
 }
 
-.text-container .text-animate h3 {
+.text-container .text-profile h3 {
   font-size: 3.5rem;
   font-size: 700;
-  color: transparent;
-  -webkit-text-stroke: 0.7px var(--main-color) ;
+  color:var(--main-color);
 }
 
 .text-container p {
@@ -252,13 +245,7 @@ section {
   width: 100%;
 }
 
-
-
-
-
-
 /* about section */
-
 
 #about {
   display: flex;
@@ -276,7 +263,6 @@ section {
   text-align: center;
   margin: 5rem;
 }
-
 
 span {
   color: var(--main-color);
@@ -300,53 +286,89 @@ span {
   background-color: var(--second-bg-color);
 }
 
-
- 
-
 /* skill section */
 
-
-
-.skill-container{
+.skill-container {
   display: flex;
-flex-direction: row 2;
-justify-content: center;
-text-align: center;
+  flex-direction: row 2;
+  justify-content: center;
+  text-align: center;
 }
 
-article{
+article {
   margin: 5rem;
   font-size: large;
-
 }
 
 /* project section */
 
-
-
-#projects {
-  position: relative;
+.card-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.card {
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px white;
+  overflow: hidden;
+  background-color: var(--text-color);
+}
+.card-img {
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
+.card-details {
+  height: 70px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: rgb(201, 195, 195);
   color: black;
+
+  transition: 0.5s;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+.card-details h1 {
+  margin: 10px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.card-details a {
+  color: var(--text-color);
+  font-size: 20px;
+  border: 2px solid var(--bg-color);
+  border-radius: 3px;
+  background-color: #333;
+  padding: 5px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+.card-container span {
+  font-weight: bold;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-details {
+  height: 240px;
+}
+
+.card:hover a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover img {
+  transform: scale(1, 1) rotate(-3deg);
 }
 
 /* contact section  */
@@ -357,7 +379,6 @@ article{
   flex-direction: column;
   height: 70vh;
 }
-
 
 .contact-containers {
   display: flex;
@@ -378,6 +399,15 @@ article{
   margin: 2rem;
 }
 
+.contact-container a {
+  /* color: var(--text-color); */
+  color: var(--text-color);
+  font-size: large;
+}
+
+.contact-container a:hover {
+  color: var(--main-color);
+}
 
 .contact-icon {
   cursor: default;
@@ -386,8 +416,6 @@ article{
 .email-icon {
   height: 2.5rem;
 }
-
-
 
 /* FOOTER SECTION */
 
@@ -408,4 +436,3 @@ footer p {
   cursor: pointer;
   height: 2rem;
 }
-
