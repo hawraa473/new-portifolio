@@ -33,7 +33,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
@@ -138,7 +138,7 @@ header {
   .nav-bar {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -100%;
     width: 100%;
     padding: 1rem 4%;
     background-color: var(--bg-color);
